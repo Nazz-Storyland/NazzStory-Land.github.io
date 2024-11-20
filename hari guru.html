@@ -3,179 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jurnalistik - Hari Guru Nasional</title>
+    <title>Hari Guru Nasional</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            background: #e3f2fd;
             color: #333;
-            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #2196f3, #1e88e5);
+            background: linear-gradient(to right, #2196f3, #1e88e5);
             color: white;
             text-align: center;
-            padding: 80px 20px;
-            font-size: 2.5em;
+            padding: 60px 20px;
+            font-size: 2em;
             font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         nav {
-            display: flex;
-            justify-content: center;
             background: #ffffff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            padding: 10px 0;
         }
 
         nav a {
             color: #2196f3;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 1.1em;
             font-weight: bold;
-            transition: color 0.3s ease, transform 0.2s ease;
+            font-size: 1em;
         }
 
         nav a:hover {
             color: #1e88e5;
-            transform: scale(1.1);
         }
 
         .hero {
-            background: url('guru2.jpg') no-repeat center center/cover;
-            position: relative;
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            background: #64b5f6;
             color: white;
-            font-size: 2em;
-            font-weight: bold;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: -1;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 1.5em;
         }
 
         .content {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 1.5s ease-in-out;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .content h1 {
+            color: #1e88e5;
             text-align: center;
             margin-bottom: 20px;
-            color: #1e88e5;
-            font-size: 2em;
+            font-size: 1.8em;
         }
 
         .content p {
-            margin-bottom: 20px;
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
             text-align: justify;
+            color: #555;
         }
 
         .content img {
-            width: 100%;
-            border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 5px;
         }
 
         .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #1e88e5, #1565c0);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 1.1em;
-            font-weight: bold;
-            text-align: center;
-            margin: 30px auto;
-            transition: background-color 0.3s ease, transform 0.2s ease;
             display: block;
-            width: 220px;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #1e88e5;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
 
         .btn:hover {
-            transform: scale(1.05);
-            background: linear-gradient(135deg, #1565c0, #1e88e5);
+            background: #1565c0;
         }
 
         footer {
-            background: #1565c0;
+            background: #1e88e5;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 15px;
+            margin-top: 20px;
         }
 
         footer a {
-            color: #80deea;
+            color: #bbdefb;
             text-decoration: none;
         }
 
         footer a:hover {
-            color: #e0f7fa;
             text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                font-size: 2em;
-                padding: 60px 20px;
-            }
-
-            .hero {
-                font-size: 1.5em;
-                height: 50vh;
-            }
-
-            .content {
-                padding: 20px;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     </style>
 </head>
@@ -186,7 +121,7 @@
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
+    <a href="#">Home</a>
     <a href="#">Berita</a>
     <a href="#">Tentang Kami</a>
     <a href="#">Kontak</a>
@@ -204,9 +139,6 @@
     </p>
     <p>
         Dalam artikel ini, kami membagikan cerita inspiratif, wawancara eksklusif, dan momen-momen penting yang menggambarkan peran penting para guru dalam kehidupan kita.
-    </p>
-    <p>
-        Ayo bersama-sama memberikan penghormatan kepada para guru yang telah memberikan segalanya demi pendidikan kita.
     </p>
     <a href="index.html" class="btn">Kembali ke Beranda</a>
 </div>
