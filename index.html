@@ -13,22 +13,22 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: #121212;
             color: #e0e0e0;
             line-height: 1.6;
+            background-image: url('bg6.jpg');
         }
 
-        header {
-            background: #1f1f1f;
-            color: #e0e0e0;
-            text-align: center;
-            padding: 60px 20px;
-            font-size: 2.5em;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
+header {
+    background: url('Smk.jpg') no-repeat center center/cover;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
         nav {
             display: flex;
@@ -55,7 +55,7 @@
         }
 
         .hero {
-            background: url('logojurna.jpg') no-repeat center center/cover;
+            background: url('logojurnal.png') no-repeat center center/cover;
             background-size: cover;
             color: white;
             text-align: center;
@@ -87,7 +87,7 @@
             text-align: center;
             font-size: 2em;
             margin-bottom: 40px;
-            color: #4caf50;
+            color: white;
         }
 
         .grid {
@@ -174,8 +174,8 @@
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">Berita</a>
-    <a href="#">Tentang Kami</a>
+    <a href="#berita">Berita</a>
+    <a href="#tentang kami">Tentang Kami</a>
     <a href="#">Kontak</a>
 </nav>
 
@@ -184,7 +184,7 @@
     <br> SMK Pangudi Luhur Seputih Mataram
 </div>
 
-<div class="content">
+<div class="content" id="berita">
     <div class="section-title">Berita Terbaru</div>
     <div class="grid">
         <div class="card">
@@ -214,30 +214,32 @@
     </div>
 </div>
 
-<div class="content">
-    <div class="section-title">Tentang Jurnalistik</div>
-    <p style="text-align: center; font-size: 1.2em; margin-bottom: 40px; color: #a5d6a7;">
+<div class="content" id="tentang kami">
+    <strong><div class="section-title">Tentang Jurnalistik</div><strong>
+      <hr>
+    <strong><p style="text-align: center; font-size: 1.2em; margin-bottom: 40px; color: white;" >
         Jurnalistik SMK Pangudi Luhur Seputih Mataram adalah wadah kreatif bagi siswa untuk menyalurkan bakat dan minat 
         dalam bidang menulis, fotografi, dan multimedia. Kami percaya bahwa setiap siswa memiliki potensi besar untuk 
-        menjadi agen perubahan melalui karya-karya jurnalistik yang inspiratif dan bermakna.
-    </p>
+        menjadi agen perubahan melalui karya-karya jurnalistik yang inspiratif dan bermakna. 
+        <hr>
+    </p></strong>
     <div class="grid">
         <div class="card">
-            <img src="penulisan.jpg" alt="Penulisan Kreatif">
+            <img src="tgn.jpeg" alt="Penulisan Kreatif">
             <div class="card-content">
                 <h3>Penulisan Kreatif</h3>
                 <p>Melatih siswa untuk menulis artikel, cerita pendek, hingga opini kritis yang mampu menggugah pembaca.</p>
             </div>
         </div>
         <div class="card">
-            <img src="fotografi.jpg" alt="Fotografi Jurnalistik">
+            <img src="ft.jpeg" alt="Fotografi Jurnalistik">
             <div class="card-content">
                 <h3>Fotografi Jurnalistik</h3>
                 <p>Mengabadikan momen penting dengan seni fotografi yang bercerita dalam setiap jepretannya.</p>
             </div>
         </div>
         <div class="card">
-            <img src="multimedia.jpg" alt="Produksi Multimedia">
+            <img src="ml.jpg" alt="Produksi Multimedia">
             <div class="card-content">
                 <h3>Produksi Multimedia</h3>
                 <p>Mengasah kemampuan siswa dalam pembuatan video dokumenter, berita, dan konten digital lainnya.</p>
@@ -252,4 +254,4 @@
 </footer>
 
 </body>
-</html>
+    </html>
