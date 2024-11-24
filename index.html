@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+        .form-container input,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+        .form-container input:focus,
+        .form-container select:focus {
+            border-color: #6a11cb;
+        }
+        .form-container .submitButton{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #2575fc;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .form-container .submitButton:hover {
+            background: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Sekolah" class="school-logo">
+            <h1 class="school-name">Nama Sekolah</h1>
+        </div>
+        <h2 class="welcome-message">Selamat Datang!</h2>
+        <p class="instruction">Silakan masukkan data Anda di form berikut. Pastikan informasi yang Anda masukkan benar.</p>
+    </header>
+
+    <div class="form-container">
+        <h2>Masukan Data Siswa</h2>
+        <form id="studentForm">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama..." required>
+
+            <label for="class">Kelas</label>
+            <input type="text" id="class" name="class" placeholder="Masukkan kelas..." required>
+
+            <label for="jurusan">Jurusan</label>
+            <select id="jurusan" name="jurusan" required>
+                <option value="" disabled selected>Jurusan</option>
+                <option value="RPL">RPL (Rekayasa Perangkat Lunak)</option>
+                <option value="TKR">TKR (Teknik Kendaraan Ringan)</option>
+            </select>
+
+            <button class="submitButton" type="submit" href="index2.html">
+    <a href="index2.html" style="color: white; text-decoration: none;">Lanjut ke Beranda</a>
+</button>
+
+
+
+        </form>
+    </div>
+</body>
+</html>
